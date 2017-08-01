@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Billboard_Group_template</title>
+    <link href='css/jquery.qtip.min.css' rel='stylesheet' />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<script>
+$('#myTabs a[href="#board"]').click(function(e) {
+    e.preventDefault()
+    $(this).tab('show')
+})
+</script>
+<style>
+.article {
+    margin: 10px 10px;
+}
+
+.title {
+    font-style: italic;
+    margin-bottom: 1px
+}
+
+.content {
+    padding-left: 10px;
+}
+
+.group {
+    margin: 10px 10px;
+}
+
+.groupcontent {
+    padding-left: 10px;
+}
+</style>
+
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Temmujin Fitness</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">課程介紹 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">有氧拳擊</a></li>
+                            <li><a href="#">飛輪</a></li>
+                            <li><a href="#">自由搏擊</a></li>
+                            <li><a href="#">Cross Fit</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">教練介紹 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">有氧拳擊</a></li>
+                            <li><a href="#">飛輪</a></li>
+                            <li><a href="#">自由搏擊</a></li>
+                            <li><a href="#">Cross Fit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">場地</a></li>
+                    <li class="active"><a href="#contact ">公佈欄</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">會員中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">個人資料</a></li>
+                            <li><a href="#">健身歷程</a></li>
+                            <li><a href="#">好友</a></li>
+                            <li><a href="#">追蹤動態</a></li>
+                            <li><a href="#">站內信</a></li>
+                            <li><a href="#">點數</a></li>
+                            <li><a href="#">揪團</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登入</a></li>
+                    <li><a href="#">註冊</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- 公告和揪團 -->
+    <div class="container">
+        <div class="row">
+            <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" id="myTabs" style="width: 60%;margin:auto;">
+                    <li role="presentation" class="active"><a href="#board" aria-controls="board" role="tab" data-toggle="tab">公告</a></li>
+                    <li role="presentation"><a href="#group" aria-controls="group" role="tab" data-toggle="tab">揪團區</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content" style="width: 60%;margin:auto;">
+                    <!-- 公告區 -->
+                    <div role="tabpanel" class="tab-pane active" id="board">
+                        <!-- 公告-1 -->
+                        <div class="article">
+                            <div class="title">
+                                管理員(2017-05-05)
+                            </div>
+                            <div class="content">
+                                體育客有很多小模,大家快來!
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- 公告-2 -->
+                        <div class="article">
+                            <div class="title">
+                                管理員(2017-05-06)
+                            </div>
+                            <div class="content">
+                                體育客有很多小模,大家快來!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 揪團區 -->
+                    <div role="tabpanel" class="tab-pane" id="group">
+                        <!-- 團-1 -->
+                        <div class="group">
+                            <div class="grouptitle">
+                                [打球團]
+                            </div>
+                            <div class="owner">
+                                館長:
+                            </div>
+                            <div class="groupcontent">
+                                星期三下午有人要去大安動中心練腿嗎? 大概一小時!
+                            </div>
+                            <button class="btn btn-sm btn-primary" type="submit">我想加入</button>
+                        </div>
+                        <hr>
+                        <!-- 團-2 -->
+                        <div class="group">
+                            <div class="grouptitle">
+                                [健身團]
+                            </div>
+                            <div class="owner">
+                                館長:
+                            </div>
+                            <div class="groupcontent">
+                                星期三下午有人要去大安動中心練腿嗎? 大概一小時!
+                            </div>
+                            <button class="btn btn-sm btn-primary" type="submit">我想加入</button>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
